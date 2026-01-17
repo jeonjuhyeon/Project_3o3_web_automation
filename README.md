@@ -22,5 +22,13 @@ python -m playwright install
 
 pytest --html=report.html --self-contained-html
 ```
+
 ---
 
+## GitHub Repository
+- https://github.com/jeonjuhyeon/Project_3o3_web_automation
+
+위의 Github Repository에는 GitHub Actions를 통한 CI 실행 기록이 포함되어 있으며,
+push 또는 수동 실행(workflow_dispatch)으로도 테스트를 실행할 수 있습니다.
+
+---
