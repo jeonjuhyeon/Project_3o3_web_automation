@@ -25,11 +25,15 @@ pytest --html=report.html --self-contained-html
 
 ---
 
-## GitHub Repository
+## 4. CI/CD 파이프라인
+```
 - https://github.com/jeonjuhyeon/Project_3o3_web_automation
+```
 
-위의 Github Repository에는 GitHub Actions를 통한 CI 실행 기록이 포함되어 있으며,
-push 또는 수동 실행(workflow_dispatch)으로도 테스트를 실행할 수 있습니다.
-테스트 실패 시 GitHub Actions의 기본 이메일 알림을 사용하여 결과가 메일로 전달됩니다.
+- 위의 Github Repository에는 GitHub Actions를 통한 CI 실행 기록이 포함되어 있으며,
+  push 또는 수동 실행(workflow_dispatch)으로도 테스트를 실행할 수 있습니다.
+- Ubuntu 기반 Github Runner에서 python 및 playwright 환경을 구성한 후, pytest를 통해 자동화 테스트를 수행합니다.
+- 테스트 결과는 pytest-html을 통해 HTML 리포트로도 생성됩니다.
+- 테스트 실패 시 GitHub Actions의 기본 이메일 알림을 사용하여 결과가 메일로 전달됩니다.
 
 ---
